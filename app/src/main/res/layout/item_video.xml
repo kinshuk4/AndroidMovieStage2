@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/iv_video_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="16dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="80dp"
+        android:scaleType="fitCenter"
+        android:src="@color/grey" />
+
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="Lorem ipsum"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

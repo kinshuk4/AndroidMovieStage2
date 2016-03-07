@@ -1,0 +1,166 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movie_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.k2udacity.moviestage2.MovieDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Movie Title"
+            android:textColor="@android:color/white"
+            android:background="#009688"
+            android:paddingLeft="16sp"
+            android:paddingBottom="16sp"
+            android:paddingTop="16sp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="0.2"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.40"
+            android:paddingBottom="5sp"
+            android:orientation="horizontal"
+            android:paddingLeft="16sp"
+            android:paddingTop="2sp"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_movie_poster"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_release_yr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YYYY"
+                    android:paddingTop="2sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/tv_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120 min"
+                    android:textStyle="italic"
+                    android:paddingTop="2sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <TextView
+                    android:id="@+id/tv_vote_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.0/10"
+                    android:paddingTop="2sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                <Button
+                    android:id="@+id/btn_movie_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightBlue"
+                    android:width="100sp"
+                    android:paddingTop="5sp"
+                    android:text="@string/main_add_to_fav" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="MovieReview"
+            android:textSize="16sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey"
+            android:layout_weight="0.1"
+            android:paddingLeft="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_videos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:paddingLeft="16sp"
+            >
+
+            <TextView
+                android:id="@+id/tv_video_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/detail_videos"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey"
+            android:layout_weight="0.1"
+            android:paddingLeft="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            >
+
+            <TextView
+                android:id="@+id/tv_review_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/detail_reviews"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
